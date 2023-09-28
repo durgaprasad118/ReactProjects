@@ -1,15 +1,9 @@
 import React from 'react'
-import 'aos/dist/aos.css'
-import Aos from 'aos'
-import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
-const Hero = () => {
-  useEffect(() => {
-    Aos.init()
-  }, [])
-
+const Home = () => {
   return (
-    <div data-aos="zoom-in" className="h-[calc(100vh-64px)] w-100vw bg-blue-200 flex items-center justify-center">
+    <div className="min-h-[calc(100vh-4.1rem)] w-100vw flex items-center justify-center">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">Hello there</h1>
@@ -18,11 +12,11 @@ const Hero = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link to="/in" className="btn btn-primary">Get Started</Link>
         </div>
       </div>
     </div>
   )
 }
 
-export default Hero
+export default Home

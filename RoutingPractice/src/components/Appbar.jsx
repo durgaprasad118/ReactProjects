@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Appbar = () => {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 " data-aos="zoom-in-up">
       <div className="flex-1">
         <Link
           to="/"

@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import PasswordStrengthBar from 'react-password-strength-bar'
 import ValidatePassword from './hooks/usePasswordValidate'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+//3 useEffect aos init()
 import {
   BsFillEyeFill,
   BsFillEyeSlashFill,
@@ -19,10 +22,12 @@ function App() {
     hasChar: false,
     has8digit: false,
   })
-
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content text-center flex flex-col">
+      <div  className="hero-content text-center flex flex-col">
         <div className="max-w-md relative">
           <label className="label">
             <span className="label-text">Enter Password</span>
@@ -52,7 +57,7 @@ function App() {
           </label>
         </div>
 
-        <div className="max-w-md">
+        <div data-aos="zoom-in"  data-aos-duration="2000" className="max-w-md">
           <ul className="flex flex-col items-start w-full ">
             {!validate.hasLow && (
               <li className="text-red-700 flex items-center">
