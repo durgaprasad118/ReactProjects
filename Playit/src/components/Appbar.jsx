@@ -3,9 +3,17 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 import Layout from './Layout'
+
+import  axios  from 'axios'
 const Appbar = () => {
+  const url = 'https://todo-dp.onrender.com/'
+
+
+
+
   useEffect(() => {
     Aos.init()
+    // fetchData()
   }, [])
   return (
     <div

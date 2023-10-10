@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hola {
+  /* background: linear-gradient(
+    to right top,
+    #604c7c 0%,
+    #257983 50%,
+    #20825a 100%
+  ); */
+  background: linear-gradient(to bottom right,#141414,rgba(19,19,241,.424));
+
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.holi {
+  /* background: linear-gradient(
+    to right top,
+    #604c7c 0%,
+    #257983 50%,
+    #20825a 100%
+  ); */
+  /* background: linear-gradient(to bottom right,#141414,rgba(19,19,241,.424)); */
+
+  background-image: radial-gradient(at 82% 30%, rgba(20,20,57,0.46) 0px, transparent 50%),radial-gradient(at 100% 66%, #29183f 0px, transparent 50%),radial-gradient(at 100% 0%, #161339 0px, transparent 50%),radial-gradient(at 35% 0%, #21163b 0px, transparent 50%),radial-gradient(at 47% 59%, rgba(65,40,77,0.76) 0px, transparent 50%),radial-gradient(at 1% 2%, #3b244c 0px, transparent 50%),radial-gradient(at 75% 1%, #1a1439 0px, transparent 50%),radial-gradient(at 100% 0%, #191439 0px, transparent 50%),radial-gradient(at 0% 99%, #694e6e 0px, transparent 50%),radial-gradient(at 0% 64%, rgba(103,80,109,0.57) 0px, transparent 50%),radial-gradient(at 0% 24%, #694e6e 0px, transparent 50%),radial-gradient(at 100% 100%, #553c5d 0px, transparent 50%),radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%);
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.hole{
+  /* background:linear-gradient(to bottom, #203025 0%, #151516 100%); */
+  background-color:#131921 ;
+
+   height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
